@@ -37,6 +37,7 @@ function App() {
   };
   return (
     <>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Noun_Project_cloud_upload_icon_411593_cc.svg/1130px-Noun_Project_cloud_upload_icon_411593_cc.svg.png" alt=""  height="400" />
       <h1>File Upload</h1>
       <input
         onChange={(e) => setFile(e.target.files[0])}
@@ -44,7 +45,7 @@ function App() {
         name="file"
         id=""
       />
-      <button onClick={() => handleUpload()}>Upload File</button>
+      <button onClick={() => handleUpload()}>Upload</button>
       {code ? (
         <>
           <div >Code : {code}</div>{" "}
@@ -52,7 +53,7 @@ function App() {
       ) : (
         <></>
       )}
-
+      <h1>OR</h1>
       <h1>Enter Code</h1>
       <input type="text" onChange={(e) => setData(e.target.value)} />
       <button onClick={() => handleDownload()}>Download</button>
